@@ -33,6 +33,7 @@ namespace UseWpfMapControl
             map.MapUnit = GeographyUnit.Meter;
             map.ZoomLevelSet = new ThinkGeoCloudMapsZoomLevelSet();
 
+            // Please input your ThinkGeo Cloud Client ID / Client Secret to enable the background map. 
             ThinkGeoCloudRasterMapsOverlay thinkgeoBackgroundOverlay = new ThinkGeoCloudRasterMapsOverlay("ThinkGeoCloudClientId", "ThinkGeoCloudClientSecret");
             // Set up the TileCache for the background overlay. 
             thinkgeoBackgroundOverlay.TileCache = new XyzFileBitmapTileCache(".\\Cache");
